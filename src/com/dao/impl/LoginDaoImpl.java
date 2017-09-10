@@ -39,6 +39,7 @@ public class LoginDaoImpl implements LoginDao {
 				
 				return cust;
 			}
+			rs.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}

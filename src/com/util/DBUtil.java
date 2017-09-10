@@ -7,9 +7,9 @@ import java.sql.SQLException;
 public class DBUtil {
 	public Connection getConnection(){
 		//
-		String url = "jdbc:mysql://localhost:3306/dbdesign";
+		String url = "jdbc:mysql://localhost:3306/dbdesign?useUnicode=true&amp;characterEncoding=UTF-8 ";
 		String root = "root";
-		String password = "123456";
+		String password = "root";//修改了密码
 		String Driver = "com.mysql.jdbc.Driver";//要加载的驱动
 		
 		try {
